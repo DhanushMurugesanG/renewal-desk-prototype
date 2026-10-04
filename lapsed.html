@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lapsed · Renewal Desk prototype</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=Schibsted+Grotesk:wght@600;700;800&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#0B6E63}a:hover{color:#08544B}
+</style>
+<style>
+[hidden]{display:none!important}
+html,body{background:#CBD5D3}
+.stage{display:flex;justify-content:center;padding:24px 0}
+.screen{width:390px;height:844px;border-radius:28px;overflow:hidden;box-shadow:0 10px 40px rgba(19,39,43,.25);transform-origin:top center}
+@media (max-width:440px){html,body{background:#F3F5F4}.stage{padding:0}.screen{border-radius:0;box-shadow:none}}
+</style>
+</head>
+<body>
+<div class="stage"><div class="screen" id="screen">
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F3F5F4; color: #13272B; font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 15px; line-height: 1.4; display: flex; flex-direction: column; overflow: hidden">
+<main style="flex: 1; min-height: 0; padding: 18px 18px 12px; display: flex; flex-direction: column; gap: 12px">
+<h1 style="margin: 0; font-family: 'Schibsted Grotesk', system-ui, sans-serif; font-size: 26px; font-weight: 700">Lapsed &amp; payouts</h1>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); background: #E4EAE8; border-radius: 22px; padding: 4px; gap: 4px">
+<span aria-current="page" style="min-height: 40px; border-radius: 18px; background: #FFFFFF; color: #0B6E63; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center">Lapsed (4)</span>
+<a href="payouts.html" style="min-height: 40px; border-radius: 18px; color: #3E5257; font-weight: 600; font-size: 14px; display: flex; align-items: center; justify-content: center; text-decoration: none">Money coming (3)</a>
+</div>
+<p style="margin: 0; font-size: 14px; color: #4A5E63">LIC policies can be revived within 5 years of the first unpaid premium. A revived policy brings back your renewal commission.</p>
+
+<div style="background: #FFFFFF; border: 1px solid #F1D9B5; border-radius: 14px; padding: 12px 14px; display: flex; flex-direction: column; gap: 8px">
+<span style="display: flex; flex-direction: column"><span style="font-weight: 600">Ravi P · LIC Jeevan Labh</span><span style="font-size: 13px; color: #7A3F05; font-weight: 600">Only 10 months left to revive</span><span style="font-size: 13px; color: #5B6E73">₹8,214 a year · lapsed Aug 2022</span></span>
+<div style="display: flex; gap: 8px"><button type="button" style="flex: 1; min-height: 44px; border-radius: 22px; border: 1px solid #C9D4D2; background: #FFFFFF; color: #13272B; font: inherit; font-weight: 600; cursor: pointer">Call</button><button type="button" style="flex: 1; min-height: 44px; border-radius: 22px; border: 0; background: #E1F0EC; color: #0B5E54; font: inherit; font-weight: 600; cursor: pointer">Remind</button></div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #DCE3E2; border-radius: 14px; padding: 12px 14px; display: flex; flex-direction: column; gap: 8px">
+<span style="display: flex; flex-direction: column"><span style="font-weight: 600">Arun K · LIC Bima Jyoti</span><span style="font-size: 13px; color: #5B6E73">₹6,240 a year · lapsed 8 months ago · revive by Feb 2031</span></span>
+<div style="display: flex; gap: 8px"><button type="button" style="flex: 1; min-height: 44px; border-radius: 22px; border: 1px solid #C9D4D2; background: #FFFFFF; color: #13272B; font: inherit; font-weight: 600; cursor: pointer">Call</button><button type="button" style="flex: 1; min-height: 44px; border-radius: 22px; border: 0; background: #E1F0EC; color: #0B5E54; font: inherit; font-weight: 600; cursor: pointer">Remind</button></div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #DCE3E2; border-radius: 14px; padding: 12px 14px; display: flex; flex-direction: column; gap: 8px">
+<span style="display: flex; flex-direction: column"><span style="font-weight: 600">Vijay M · LIC Jeevan Saral</span><span style="font-size: 13px; color: #5B6E73">₹5,400 a year · lapsed 2 years ago · revive by Sep 2029</span></span>
+<div style="display: flex; gap: 8px"><button type="button" style="flex: 1; min-height: 44px; border-radius: 22px; border: 1px solid #C9D4D2; background: #FFFFFF; color: #13272B; font: inherit; font-weight: 600; cursor: pointer">Call</button><button type="button" style="flex: 1; min-height: 44px; border-radius: 22px; border: 0; background: #E1F0EC; color: #0B5E54; font: inherit; font-weight: 600; cursor: pointer">Remind</button></div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #DCE3E2; border-radius: 14px; padding: 12px 14px; display: flex; align-items: center; gap: 10px">
+<span style="flex: 1; display: flex; flex-direction: column"><span style="font-weight: 600">Sathish P · Bike insurance</span><span style="font-size: 13px; color: #5B6E73">Ended 3 months ago · can't be revived, offer a new policy</span></span>
+<button type="button" style="min-height: 44px; padding: 0 16px; border-radius: 22px; border: 1px solid #C9D4D2; background: #FFFFFF; color: #13272B; font: inherit; font-weight: 600; cursor: pointer">Call</button>
+</div>
+</main>
+
+<nav aria-label="Main sections" style="height: 76px; flex: none; background: #FFFFFF; border-top: 1px solid #DCE3E2; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); align-items: center; padding: 0 6px">
+<a href="index.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 56px; text-decoration: none; color: #5B6E73; font-size: 12px; font-weight: 500">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"></path></svg>
+<span>Home</span>
+</a>
+<a href="customers.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 56px; text-decoration: none; color: #5B6E73; font-size: 12px; font-weight: 500">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5"></path><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.8c1.9.7 3.1 2.4 3.5 5.2"></path></svg>
+<span>Customers</span>
+</a>
+<a href="add.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 56px; text-decoration: none; color: #5B6E73; font-size: 12px; font-weight: 500">
+<span style="width: 44px; height: 30px; border-radius: 15px; background: #0B6E63; color: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"></path><circle cx="12" cy="13.5" r="3.5"></circle></svg></span>
+<span>Add</span>
+</a>
+<a href="lapsed.html" aria-current="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 56px; text-decoration: none; color: #0B6E63; font-size: 12px; font-weight: 700">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"></path><path d="M3 4v4h4"></path><path d="M12 7v5l3 2"></path></svg>
+<span>Lapsed</span>
+</a>
+</nav>
+</div>
+</div></div>
+<script>
+(function(){var s=document.getElementById('screen');function fit(){var w=window.innerWidth;var k=Math.min(1,w/390);s.style.transform=k<1?'scale('+k+')':'';s.parentNode.style.height=k<1?(844*k)+'px':'';}fit();window.addEventListener('resize',fit);})();
+
+</script>
+</body>
+</html>
