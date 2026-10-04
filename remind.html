@@ -4,68 +4,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Send reminders · Renewal Desk prototype</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=Schibsted+Grotesk:wght@600;700;800&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=Noto+Sans+Tamil:wght@400;600&amp;family=Schibsted+Grotesk:wght@600;700;800&amp;display=swap">
 <style>
-body{margin:0}
-a{color:#0B6E63}a:hover{color:#08544B}
-</style>
-<style>
-[hidden]{display:none!important}
-html,body{background:#CBD5D3}
-.stage{display:flex;justify-content:center;padding:24px 0}
+body{margin:0}a{color:#0B6E63}a:hover{color:#08544B}[hidden]{display:none!important}
+html,body{background:#CBD5D3}.stage{display:flex;justify-content:center;padding:24px 0}
 .screen{width:390px;height:844px;border-radius:28px;overflow:hidden;box-shadow:0 10px 40px rgba(19,39,43,.25);transform-origin:top center}
 @media (max-width:440px){html,body{background:#F3F5F4}.stage{padding:0}.screen{border-radius:0;box-shadow:none}}
 </style>
 </head>
 <body>
 <div class="stage"><div class="screen" id="screen">
-<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F3F5F4; color: #13272B; font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 15px; line-height: 1.4; display: flex; flex-direction: column; overflow: hidden">
-<header style="display: flex; align-items: center; gap: 6px; padding: 12px 12px 6px">
-<a href="index.html" aria-label="Back to Home" style="width: 44px; height: 44px; border-radius: 22px; display: flex; align-items: center; justify-content: center; color: #13272B; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></a>
-<div style="display: flex; flex-direction: column">
-<h1 style="margin: 0; font-family: 'Schibsted Grotesk', system-ui, sans-serif; font-size: 20px; font-weight: 700">Send reminders</h1>
-<span style="font-size: 13px; color: #5B6E73">From your WhatsApp · 2 customers</span>
-</div>
-</header>
-<main style="flex: 1; min-height: 0; padding: 6px 18px 18px; display: flex; flex-direction: column; gap: 14px">
-<div style="background: #FFFFFF; border: 1px solid #DCE3E2; border-radius: 14px; overflow: hidden">
-<div style="display: flex; align-items: center; gap: 12px; padding: 10px 14px; min-height: 44px">
-<input type="checkbox" id="r1" checked="checked" style="width: 20px; height: 20px; accent-color: #0B6E63; margin: 0">
-<label for="r1" style="flex: 1; display: flex; flex-direction: column"><span style="font-weight: 600">Lakshmi N</span><span style="font-size: 13px; color: #5B6E73">₹10,577 · due Wed 7 Oct</span></label>
-</div>
-<div style="display: flex; align-items: center; gap: 12px; padding: 10px 14px; min-height: 44px; border-top: 1px solid #EDF1F0">
-<input type="checkbox" id="r2" checked="checked" style="width: 20px; height: 20px; accent-color: #0B6E63; margin: 0">
-<label for="r2" style="flex: 1; display: flex; flex-direction: column"><span style="font-weight: 600">Priya R</span><span style="font-size: 13px; color: #5B6E73">₹21,450 · due Fri 9 Oct</span></label>
-</div>
-</div>
-
-<section style="display: flex; flex-direction: column; gap: 8px">
-<span style="font-size: 13px; font-weight: 600; color: #5B6E73">Message to Lakshmi N</span>
-<div style="background: #E7EDE9; border-radius: 16px; padding: 16px 14px; display: flex; flex-direction: column">
-<div style="align-self: flex-end; max-width: 290px; background: #D8F2E2; border-radius: 14px 14px 4px 14px; padding: 12px 14px; display: flex; flex-direction: column; gap: 8px; font-size: 15px; line-height: 1.45">
-<span>Hello Lakshmi, this is a reminder that your LIC policy premium of ₹10,577 is due on 7 Oct 2026.</span>
-<span>You can pay at any LIC branch or online. Reply here if you need any help.</span>
-<span style="color: #3E5257">Senthil, your insurance agent</span>
-</div>
-</div>
-<span style="font-size: 13px; color: #5B6E73">Each customer gets their own name, amount and date.</span>
-</section>
-
-<div style="display: flex; align-items: center; gap: 12px; background: #FFFFFF; border: 1px solid #DCE3E2; border-radius: 14px; padding: 12px 14px">
-<input type="checkbox" id="auto" checked="checked" style="width: 20px; height: 20px; accent-color: #0B6E63; margin: 0">
-<label for="auto" style="flex: 1; display: flex; flex-direction: column"><span style="font-weight: 600">Send automatically from next time</span><span style="font-size: 13px; color: #5B6E73">7 days and 1 day before each due date</span></label>
-</div>
-
-<div style="flex: 1"></div>
-<a href="index.html" style="min-height: 52px; border-radius: 26px; background: #0B6E63; color: #FFFFFF; font-weight: 600; font-size: 16px; display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"></path></svg>Send 2 reminders</a>
-<button type="button" style="min-height: 48px; border-radius: 24px; border: 1px solid #C9D4D2; background: #FFFFFF; color: #13272B; font: inherit; font-weight: 600; cursor: pointer">Edit message</button>
-<p style="margin: 0; font-size: 12.5px; color: #5B6E73; text-align: center">Replies come to your WhatsApp. Customers can stop reminders any time.</p>
-</main>
-</div>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F3F5F4; color: #13272B; font-family: 'IBM Plex Sans', 'Noto Sans Tamil', system-ui, sans-serif; font-size: 15px; line-height: 1.4; display: flex; flex-direction: column; overflow: hidden"><header style="display: flex; align-items: center; gap: 6px; padding: 12px 12px 6px"><a href="index.html" aria-label="Back" style="width: 44px; height: 44px; border-radius: 22px; display: flex; align-items: center; justify-content: center; color: #13272B; text-decoration: none; flex: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></a><div style="flex: 1; min-width: 0; display: flex; flex-direction: column"><div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap"><h1 style="margin: 0; font-family: 'Schibsted Grotesk', system-ui, sans-serif; font-size: 20px; font-weight: 700">Send reminders</h1></div><span style="font-size: 13px; color: #5B6E73">From your WhatsApp · 2 customers</span></div></header><main style="flex: 1; min-height: 0; padding: 4px 18px 16px; display: flex; flex-direction: column; gap: 10px"><div style="background: #E3EBF7; color: #234B8A; border-radius: 14px; padding: 11px 14px; display: flex; align-items: center; gap: 12px; text-decoration: none"><span style="flex: none; display: flex"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z"></path><path d="M10 20a2 2 0 0 0 4 0"></path></svg></span><span style="flex: 1; display: flex; flex-direction: column"><span style="font-weight: 600">LIC reminded Lakshmi on 30 Sep</span><span style="font-size: 13px">This is your personal follow-up</span></span></div><div style="background: #FFFFFF; border: 1px solid #DCE3E2; border-radius: 14px; overflow: hidden"><div style="display: flex; align-items: center; gap: 12px; padding: 10px 14px; min-height: 52px; box-sizing: border-box"><input type="checkbox" id="r1" checked="checked" style="width: 20px; height: 20px; accent-color: #0B6E63; margin: 0; flex: none"><label for="r1" style="flex: 1; min-width: 0; display: flex; flex-direction: column"><span style="font-weight: 600">Lakshmi N</span><span style="font-size: 13px; color: #5B6E73">₹10,577 · 1 day overdue</span></label></div><div style="display: flex; align-items: center; gap: 12px; padding: 10px 14px; min-height: 52px; box-sizing: border-box; border-top: 1px solid #EDF1F0"><input type="checkbox" id="r2" checked="checked" style="width: 20px; height: 20px; accent-color: #0B6E63; margin: 0; flex: none"><label for="r2" style="flex: 1; min-width: 0; display: flex; flex-direction: column"><span style="font-weight: 600">Priya R</span><span style="font-size: 13px; color: #5B6E73">₹21,450 · renews tomorrow</span></label></div></div><div data-var="en"><div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); background: #E4EAE8; border-radius: 20px; padding: 3px; gap: 3px"><button type="button" data-fn="showEn" aria-pressed="true" style="min-height: 36px; border-radius: 16px; background: #FFFFFF; color: #0B6E63; font-weight: 700; border: 0; font: inherit; font-size: 14px; cursor: pointer">English</button><button type="button" data-fn="showTa" aria-pressed="false" style="min-height: 36px; border-radius: 16px; background: transparent; color: #3E5257; font-weight: 600; border: 0; font: inherit; font-size: 14px; cursor: pointer">தமிழ்</button></div><div style="background: #E7EDE9; border-radius: 16px; padding: 12px; display: flex; flex-direction: column; gap: 10px"><div style="align-self: flex-end; max-width: 296px; background: #D8F2E2; border-radius: 14px 14px 4px 14px; padding: 10px 12px; display: flex; flex-direction: column; gap: 6px; font-size: 14.5px; line-height: 1.45"><span>Hello Lakshmi, your LIC premium of ₹10,577 was due on 7 Oct. Please pay by 6 Nov to keep your policy active.</span><span>You can pay at any LIC branch or online at licindia.in. Reply here if you need help.</span><span><span style="color: #3E5257">Senthil, your insurance agent</span></span></div></div></div><div data-var="ta" hidden="hidden"><div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); background: #E4EAE8; border-radius: 20px; padding: 3px; gap: 3px"><button type="button" data-fn="showEn" aria-pressed="false" style="min-height: 36px; border-radius: 16px; background: transparent; color: #3E5257; font-weight: 600; border: 0; font: inherit; font-size: 14px; cursor: pointer">English</button><button type="button" data-fn="showTa" aria-pressed="true" style="min-height: 36px; border-radius: 16px; background: #FFFFFF; color: #0B6E63; font-weight: 700; border: 0; font: inherit; font-size: 14px; cursor: pointer">தமிழ்</button></div><div style="background: #E7EDE9; border-radius: 16px; padding: 12px; display: flex; flex-direction: column; gap: 10px"><div style="align-self: flex-end; max-width: 296px; background: #D8F2E2; border-radius: 14px 14px 4px 14px; padding: 10px 12px; display: flex; flex-direction: column; gap: 6px; font-size: 14.5px; line-height: 1.45"><span>வணக்கம் லக்ஷ்மி, உங்கள் LIC பிரீமியம் ₹10,577 அக்டோபர் 7 அன்று செலுத்த வேண்டியது. பாலிசி தொடர நவம்பர் 6க்குள் செலுத்துங்கள்.</span><span>எந்த LIC கிளையிலும் அல்லது licindia.in இல் செலுத்தலாம். உதவி தேவைப்பட்டால் இங்கே பதில் அனுப்புங்கள்.</span><span><span style="color: #3E5257">செந்தில், உங்கள் காப்பீட்டு முகவர்</span></span></div></div><p style="margin: 0; font-size: 13px; color: #5B6E73">Tamil draft · please proofread</p></div><div style="background: #FFFFFF; border: 1px solid #DCE3E2; border-radius: 14px; overflow: hidden"><div style="display: flex; align-items: center; gap: 12px; padding: 10px 14px; min-height: 52px; box-sizing: border-box"><label for="auto" style="flex: 1; min-width: 0; display: flex; flex-direction: column"><span style="font-weight: 600">Follow up again if still unpaid</span><span style="font-size: 13px; color: #5B6E73">Day 3 and day 10 after the due date</span></label><input type="checkbox" id="auto" checked="checked" role="switch" style="width: 20px; height: 20px; accent-color: #0B6E63; margin: 0; flex: none"></div></div><div style="flex: 1"></div><a href="index.html" style="min-height: 52px; border-radius: 26px; background: #0B6E63; color: #FFFFFF; border: 0; font-size: 16px; font-family: inherit; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; box-sizing: border-box; width: 100%"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"></path></svg>Send 2 reminders</a><a href="messages.html" style="min-height: 44px; display: flex; align-items: center; justify-content: center; font-weight: 600; text-decoration: none">See message history</a></main></div>
 </div></div>
 <script>
-(function(){var s=document.getElementById('screen');function fit(){var w=window.innerWidth;var k=Math.min(1,w/390);s.style.transform=k<1?'scale('+k+')':'';s.parentNode.style.height=k<1?(844*k)+'px':'';}fit();window.addEventListener('resize',fit);})();
-
+(function(){var s=document.getElementById('screen');function fit(){var k=Math.min(1,window.innerWidth/390);s.style.transform=k<1?'scale('+k+')':'';s.parentNode.style.height=k<1?(844*k)+'px':'';}fit();window.addEventListener('resize',fit);})();
+var S={"en": true, "ta": false},F={"showEn": {"en": true, "ta": false}, "showTa": {"en": false, "ta": true}};function apply(){document.querySelectorAll('[data-var]').forEach(function(el){el.hidden=!S[el.getAttribute('data-var')];});}document.addEventListener('click',function(e){var b=e.target.closest('[data-fn]');if(!b)return;var u=F[b.getAttribute('data-fn')];for(var k in u)S[k]=u[k];apply();});apply();
 </script>
 </body>
 </html>

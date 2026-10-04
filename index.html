@@ -4,116 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Home · Renewal Desk prototype</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=Schibsted+Grotesk:wght@600;700;800&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=Noto+Sans+Tamil:wght@400;600&amp;family=Schibsted+Grotesk:wght@600;700;800&amp;display=swap">
 <style>
-body{margin:0}
-a{color:#0B6E63}a:hover{color:#08544B}
-</style>
-<style>
-[hidden]{display:none!important}
-html,body{background:#CBD5D3}
-.stage{display:flex;justify-content:center;padding:24px 0}
+body{margin:0}a{color:#0B6E63}a:hover{color:#08544B}[hidden]{display:none!important}
+html,body{background:#CBD5D3}.stage{display:flex;justify-content:center;padding:24px 0}
 .screen{width:390px;height:844px;border-radius:28px;overflow:hidden;box-shadow:0 10px 40px rgba(19,39,43,.25);transform-origin:top center}
 @media (max-width:440px){html,body{background:#F3F5F4}.stage{padding:0}.screen{border-radius:0;box-shadow:none}}
 </style>
 </head>
 <body>
 <div class="stage"><div class="screen" id="screen">
-<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F3F5F4; color: #13272B; font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 15px; line-height: 1.4; display: flex; flex-direction: column; overflow: hidden">
-<main style="flex: 1; min-height: 0; padding: 14px 18px 10px; display: flex; flex-direction: column; gap: 10px">
-<header style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
-<div style="display: flex; flex-direction: column; gap: 2px">
-<span style="font-size: 13px; color: #5B6E73">Monday, 5 October</span>
-<h1 style="margin: 0; font-family: 'Schibsted Grotesk', system-ui, sans-serif; font-size: 24px; font-weight: 700; letter-spacing: -0.01em">Good morning, Senthil</h1>
-</div>
-<button type="button" aria-label="Profile and settings" style="width: 44px; height: 44px; border-radius: 22px; border: 1px solid #DCE3E2; background: #FFFFFF; color: #13272B; display: flex; align-items: center; justify-content: center; cursor: pointer">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1-4 4-6 8-6s7 2 8 6"></path></svg>
-</button>
-</header>
-
-<section aria-label="Commission protected" style="background: #0B6E63; color: #FFFFFF; border-radius: 16px; padding: 14px 18px; display: flex; flex-direction: column; gap: 2px">
-<span style="font-size: 13px; color: #D5ECE6">Commission protected in October</span>
-<span style="font-family: 'Schibsted Grotesk', system-ui, sans-serif; font-size: 34px; font-weight: 800; letter-spacing: -0.01em">₹18,400</span>
-<span style="font-size: 13px; color: #E6F4F0">9 renewals paid on time after your reminders</span>
-</section>
-
-<section style="display: flex; flex-direction: column; gap: 8px">
-<div style="display: flex; justify-content: space-between; align-items: baseline">
-<h2 style="margin: 0; font-family: 'Schibsted Grotesk', system-ui, sans-serif; font-size: 18px; font-weight: 700">This week</h2>
-<span style="font-size: 13px; color: #5B6E73">4 due · ₹34,877</span>
-</div>
-<div style="background: #FFFFFF; border: 1px solid #DCE3E2; border-radius: 14px; overflow: hidden">
-<div style="display: flex; align-items: center; gap: 12px; padding: 10px 12px 10px 14px">
-<div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px">
-<span style="font-weight: 600">Lakshmi N</span>
-<span style="font-size: 13px; color: #5B6E73">LIC Jeevan Anand · ₹10,577 · Wed 7 Oct</span>
-</div>
-<a href="remind.html" style="min-height: 44px; padding: 0 16px; border-radius: 22px; background: #E1F0EC; color: #0B5E54; font-weight: 600; font-size: 14px; display: flex; align-items: center; text-decoration: none">Remind</a>
-</div>
-<div style="display: flex; align-items: center; gap: 12px; padding: 10px 12px 10px 14px; border-top: 1px solid #EDF1F0">
-<div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px">
-<span style="font-weight: 600">Priya R</span>
-<span style="font-size: 13px; color: #5B6E73">Family health · ₹21,450 · Fri 9 Oct</span>
-</div>
-<a href="remind.html" style="min-height: 44px; padding: 0 16px; border-radius: 22px; background: #E1F0EC; color: #0B5E54; font-weight: 600; font-size: 14px; display: flex; align-items: center; text-decoration: none">Remind</a>
-</div>
-<div style="display: flex; align-items: center; gap: 12px; padding: 10px 14px; border-top: 1px solid #EDF1F0; min-height: 44px">
-<div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px">
-<span style="font-weight: 600">Arun K</span>
-<span style="font-size: 13px; color: #5B6E73">Bike insurance · ₹1,180 · Thu 8 Oct</span>
-</div>
-<span style="padding: 4px 10px; border-radius: 12px; background: #E3EBF7; color: #234B8A; font-size: 13px; font-weight: 600">Reminded</span>
-</div>
-<div style="display: flex; align-items: center; gap: 12px; padding: 10px 14px; border-top: 1px solid #EDF1F0; min-height: 44px">
-<div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px">
-<span style="font-weight: 600">Karthik S</span>
-<span style="font-size: 13px; color: #5B6E73">LIC Money Back · ₹1,670 · Fri 9 Oct</span>
-</div>
-<span style="padding: 4px 10px; border-radius: 12px; background: #0B6E63; color: #FFFFFF; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 4px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Paid</span>
-</div>
-</div>
-<a href="remind.html" style="min-height: 48px; border-radius: 24px; background: #0B6E63; color: #FFFFFF; font-weight: 600; font-size: 15px; display: flex; align-items: center; justify-content: center; text-decoration: none">Remind 2 customers</a>
-</section>
-
-<section style="display: flex; flex-direction: column; gap: 8px">
-<div style="display: flex; justify-content: space-between; align-items: baseline">
-<h2 style="margin: 0; font-family: 'Schibsted Grotesk', system-ui, sans-serif; font-size: 18px; font-weight: 700">Money coming to customers</h2>
-<a href="payouts.html" style="font-size: 14px; font-weight: 600; text-decoration: none">See all</a>
-</div>
-<a href="payouts.html" style="background: #FFFFFF; border: 1px solid #DCE3E2; border-radius: 14px; padding: 12px 14px; display: flex; align-items: center; gap: 12px; text-decoration: none; color: #13272B">
-<span style="width: 40px; height: 40px; border-radius: 20px; background: #E3EBF7; color: #234B8A; display: flex; align-items: center; justify-content: center; flex: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="1.5"></rect><circle cx="12" cy="13" r="2.5"></circle></svg></span>
-<span style="flex: 1; display: flex; flex-direction: column; gap: 1px"><span style="font-weight: 600">Meena D gets ₹20,000 on 12 Nov</span><span style="font-size: 13px; color: #5B6E73">Money Back survival benefit · good time to talk</span></span>
-</a>
-</section>
-
-<a href="lapsed.html" style="background: #FDF1E2; border-radius: 14px; padding: 12px 14px; display: flex; align-items: center; gap: 12px; text-decoration: none; color: #13272B">
-<span style="flex: 1; display: flex; flex-direction: column; gap: 1px"><span style="font-weight: 600; color: #7A3F05">4 lapsed policies can still be revived</span><span style="font-size: 13px; color: #7A3F05">Revive them to bring back your commission</span></span>
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A3F05" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"></path></svg>
-</a>
-</main>
-
-<nav aria-label="Main sections" style="height: 76px; flex: none; background: #FFFFFF; border-top: 1px solid #DCE3E2; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); align-items: center; padding: 0 6px">
-<a href="index.html" aria-current="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 56px; text-decoration: none; color: #0B6E63; font-size: 12px; font-weight: 700">
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"></path></svg>
-<span>Home</span>
-</a>
-<a href="customers.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 56px; text-decoration: none; color: #5B6E73; font-size: 12px; font-weight: 500">
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5"></path><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.8c1.9.7 3.1 2.4 3.5 5.2"></path></svg>
-<span>Customers</span>
-</a>
-<a href="add.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 56px; text-decoration: none; color: #5B6E73; font-size: 12px; font-weight: 500">
-<span style="width: 44px; height: 30px; border-radius: 15px; background: #0B6E63; color: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"></path><circle cx="12" cy="13.5" r="3.5"></circle></svg></span>
-<span>Add</span>
-</a>
-<a href="lapsed.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 56px; text-decoration: none; color: #5B6E73; font-size: 12px; font-weight: 500">
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"></path><path d="M3 4v4h4"></path><path d="M12 7v5l3 2"></path></svg>
-<span>Lapsed</span>
-</a>
-</nav>
-</div>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F3F5F4; color: #13272B; font-family: 'IBM Plex Sans', 'Noto Sans Tamil', system-ui, sans-serif; font-size: 15px; line-height: 1.4; display: flex; flex-direction: column; overflow: hidden"><main style="flex: 1; min-height: 0; padding: 14px 18px 12px; display: flex; flex-direction: column; gap: 10px"><header style="display: flex; align-items: center; justify-content: space-between; gap: 12px"><div style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 13px; color: #5B6E73">Thursday, 8 October</span><h1 style="margin: 0; font-family: 'Schibsted Grotesk', system-ui, sans-serif; font-size: 24px; font-weight: 700; letter-spacing: -0.01em">Good morning, Senthil</h1></div><a href="digest.html" aria-label="Notifications" style="width: 44px; height: 44px; border-radius: 22px; border: 1px solid #DCE3E2; background: #FFFFFF; color: #13272B; display: flex; align-items: center; justify-content: center; flex: none; text-decoration: none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z"></path><path d="M10 20a2 2 0 0 0 4 0"></path></svg></a></header><a href="money.html" style="background: #0B6E63; color: #FFFFFF; border-radius: 16px; padding: 13px 18px; display: flex; flex-direction: column; gap: 1px; text-decoration: none"><span style="font-size: 13px; color: #D5ECE6">Commission protected in October</span><span style="font-family: 'Schibsted Grotesk', system-ui, sans-serif; font-size: 32px; font-weight: 800; letter-spacing: -0.01em">₹18,400</span><span style="font-size: 13px; color: #E6F4F0">31 renewals paid after your follow-ups</span></a><a href="phones.html" style="background: #FDF1E2; color: #7A3F05; border-radius: 14px; padding: 11px 14px; display: flex; align-items: center; gap: 12px; text-decoration: none"><span style="flex: none; display: flex"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1z"></path></svg></span><span style="flex: 1; display: flex; flex-direction: column"><span style="font-weight: 600">12 customers have no phone number</span><span style="font-size: 13px">Reminders can't reach them yet</span></span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"></path></svg></a><div style="display: flex; justify-content: space-between; align-items: center; gap: 8px"><div style="display: flex; align-items: center; gap: 8px"><h2 style="margin: 0; font-family: 'Schibsted Grotesk', system-ui, sans-serif; font-size: 17px; font-weight: 700">Chase first</h2></div><a href="dues.html" style="font-size: 14px; font-weight: 600; text-decoration: none">All renewals</a></div><div style="background: #FFFFFF; border: 1px solid #DCE3E2; border-radius: 14px; overflow: hidden"><div style="display: flex; align-items: center; gap: 12px; padding: 10px 14px; min-height: 56px; box-sizing: border-box; text-decoration: none; color: #13272B"><span style="flex: 1; min-width: 0; display: flex; flex-direction: column"><span style="font-weight: 600">Priya R</span><span style="font-size: 13px; color: #5B6E73">Health renews tomorrow · ₹3,218 at risk</span></span><a href="remind.html" style="min-height: 44px; padding: 0 14px; border-radius: 22px; background: #E1F0EC; color: #0B5E54; border: 0; font: inherit; font-size: 14px; font-weight: 600; display: flex; align-items: center; justify-content: center; text-decoration: none; white-space: nowrap; flex: none; box-sizing: border-box">Remind</a></div><div style="display: flex; align-items: center; gap: 12px; padding: 10px 14px; min-height: 56px; box-sizing: border-box; text-decoration: none; color: #13272B; border-top: 1px solid #EDF1F0"><span style="flex: 1; min-width: 0; display: flex; flex-direction: column"><span style="font-weight: 600">Lakshmi N</span><span style="font-size: 13px; color: #5B6E73">1 day overdue · LIC reminded · ₹529 at risk</span></span><a href="remind.html" style="min-height: 44px; padding: 0 14px; border-radius: 22px; background: #E1F0EC; color: #0B5E54; border: 0; font: inherit; font-size: 14px; font-weight: 600; display: flex; align-items: center; justify-content: center; text-decoration: none; white-space: nowrap; flex: none; box-sizing: border-box">Remind</a></div><div style="display: flex; align-items: center; gap: 12px; padding: 10px 14px; min-height: 56px; box-sizing: border-box; text-decoration: none; color: #13272B; border-top: 1px solid #EDF1F0"><span style="flex: 1; min-width: 0; display: flex; flex-direction: column"><span style="font-weight: 600">Selvi R</span><span style="font-size: 13px; color: #5B6E73">Due Sun 11 Oct · ₹493 at risk</span></span><a href="remind.html" style="min-height: 44px; padding: 0 14px; border-radius: 22px; background: #E1F0EC; color: #0B5E54; border: 0; font: inherit; font-size: 14px; font-weight: 600; display: flex; align-items: center; justify-content: center; text-decoration: none; white-space: nowrap; flex: none; box-sizing: border-box">Remind</a></div><div style="display: flex; align-items: center; gap: 12px; padding: 10px 14px; min-height: 56px; box-sizing: border-box; text-decoration: none; color: #13272B; border-top: 1px solid #EDF1F0"><span style="flex: 1; min-width: 0; display: flex; flex-direction: column"><span style="font-weight: 600">Ravi P</span><span style="font-size: 13px; color: #5B6E73">Lapsed · 10 months left to revive</span></span><a href="revival.html" style="min-height: 44px; padding: 0 14px; border-radius: 22px; background: #FFFFFF; color: #7A3F05; border: 1px solid #C98A3D; font: inherit; font-size: 14px; font-weight: 600; display: flex; align-items: center; justify-content: center; text-decoration: none; white-space: nowrap; flex: none; box-sizing: border-box">Revive</a></div></div><div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px"><a href="payouts.html" style="background: #FFFFFF; border: 1px solid #DCE3E2; border-radius: 14px; padding: 11px 12px; display: flex; flex-direction: column; gap: 2px; text-decoration: none; color: #13272B"><span style="display: flex; align-items: center; gap: 6px; color: #234B8A; font-size: 13px; font-weight: 600"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="1.5"></rect><circle cx="12" cy="13" r="2.5"></circle></svg>Money coming</span><span style="font-weight: 600; font-size: 14px">Meena D gets ₹20,000 on 12 Nov</span></a><a href="claims.html" style="background: #FFFFFF; border: 1px solid #DCE3E2; border-radius: 14px; padding: 11px 12px; display: flex; flex-direction: column; gap: 2px; text-decoration: none; color: #13272B"><span style="display: flex; align-items: center; gap: 6px; color: #7A3F05; font-size: 13px; font-weight: 600"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"></rect><path d="M12 8v8M8 12h8"></path></svg>Claims</span><span style="font-weight: 600; font-size: 14px">Priya R needs 2 documents</span></a></div><a href="lapsed.html" style="background: #E1F0EC; color: #0B5E54; border-radius: 14px; padding: 11px 14px; display: flex; align-items: center; gap: 12px; text-decoration: none"><span style="flex: none; display: flex"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"></path><path d="M3 4v4h4"></path><path d="M12 7v5l3 2"></path></svg></span><span style="flex: 1; display: flex; flex-direction: column"><span style="font-weight: 600">LIC revival campaign is on</span><span style="font-size: 13px">Late fees cut until 30 Nov (sample dates)</span></span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"></path></svg></a></main><nav aria-label="Main sections" style="height: 76px; flex: none; background: #FFFFFF; border-top: 1px solid #DCE3E2; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); align-items: center; padding: 0 4px"><a href="index.html" aria-current="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 56px; text-decoration: none; color: #0B6E63; font-size: 12px; font-weight: 700"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"></path></svg><span>Home</span></a><a href="customers.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 56px; text-decoration: none; color: #5B6E73; font-size: 12px; font-weight: 500"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5"></path><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.8c1.9.7 3.1 2.4 3.5 5.2"></path></svg><span>Customers</span></a><a href="add.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 56px; text-decoration: none; color: #5B6E73; font-size: 12px; font-weight: 500"><span style="width: 44px; height: 30px; border-radius: 15px; background: #0B6E63; color: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"></path><circle cx="12" cy="13.5" r="3.5"></circle></svg></span><span>Add</span></a><a href="money.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 56px; text-decoration: none; color: #5B6E73; font-size: 12px; font-weight: 500"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2"></rect><path d="M3 10h18"></path><path d="M16 14.5h.01"></path></svg><span>Money</span></a><a href="menu.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 56px; text-decoration: none; color: #5B6E73; font-size: 12px; font-weight: 500"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg><span>More</span></a></nav></div>
 </div></div>
 <script>
-(function(){var s=document.getElementById('screen');function fit(){var w=window.innerWidth;var k=Math.min(1,w/390);s.style.transform=k<1?'scale('+k+')':'';s.parentNode.style.height=k<1?(844*k)+'px':'';}fit();window.addEventListener('resize',fit);})();
+(function(){var s=document.getElementById('screen');function fit(){var k=Math.min(1,window.innerWidth/390);s.style.transform=k<1?'scale('+k+')':'';s.parentNode.style.height=k<1?(844*k)+'px':'';}fit();window.addEventListener('resize',fit);})();
 
 </script>
 </body>
