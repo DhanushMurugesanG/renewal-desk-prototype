@@ -1,4 +1,4 @@
-# Renewal Desk: clickable prototype
+# NoLapse: clickable prototype
 
 A clickable mobile prototype of an app that helps insurance agents and small agencies look after renewals, lapses, payouts, claims and commission.
 All names and numbers are fictional sample data.
